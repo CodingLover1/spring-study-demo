@@ -1,3 +1,6 @@
 rootProject.name = 'study-demo'
 include 'spring-data-mongo'
+include 'serviceA'
+include 'serviceB'
+include 'gateway'
 

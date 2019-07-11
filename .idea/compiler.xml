@@ -5,9 +5,5 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="study-demo_main" target="1.8" />
-      <module name="study-demo_test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

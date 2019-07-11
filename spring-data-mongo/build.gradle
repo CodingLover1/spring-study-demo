@@ -12,10 +12,10 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.1.5.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb'
 
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+    compile group: 'org.projectlombok', name: 'lombok'
 
 }
