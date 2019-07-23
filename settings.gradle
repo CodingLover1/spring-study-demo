@@ -3,4 +3,5 @@ include 'spring-data-mongo'
 include 'serviceA'
 include 'serviceB'
 include 'gateway'
+include 'springboot-rabbitmq'
 
