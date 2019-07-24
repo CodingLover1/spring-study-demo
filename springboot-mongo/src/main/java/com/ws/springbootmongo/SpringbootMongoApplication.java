@@ -1,28 +1,26 @@
-package com.ws;
-
+package com.ws.springbootmongo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import sun.tools.jar.CommandLine;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
-
-   @Autowired
-   @Qualifier("userMongoTemplate")
-   private MongoTemplate userTemplate;
+public class SpringbootMongoApplication implements CommandLineRunner {
+    @Autowired
+    private MongoTemplate mongoTemplate;
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class,args);
+        SpringApplication.run(SpringbootMongoApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-        Customer customer=new Customer("wang","shuo");
-        userTemplate.save(customer);
+        Customer customer=new Customer();
+        customer.setLastName("shuo");
+        customer.setFirstName("wang");
+        mongoTemplate.save(customer);
+        System.out.println(customer);
     }
 }

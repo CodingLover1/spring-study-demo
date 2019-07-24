@@ -55,4 +55,15 @@ subprojects {
     jar {
         manifest.attributes provider: 'gradle'
     }
+
+    configurations {
+        custom {
+            it.extendsFrom implementation
+        }
+    }
+
+    bootRepackage {
+        customConfiguration = 'custom'
+    }
+
 }
