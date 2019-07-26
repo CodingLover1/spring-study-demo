@@ -4,4 +4,6 @@ include 'serviceA'
 include 'serviceB'
 include 'gateway'
 include 'springboot-rabbitmq'
+include 'springboot-mybaties'
+include 'springboot-kafka'
 
