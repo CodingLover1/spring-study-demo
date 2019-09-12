@@ -9,5 +9,5 @@ public class SpringbootMybatiesApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringbootMybatiesApplication.class, args);
     }
-
 }
+

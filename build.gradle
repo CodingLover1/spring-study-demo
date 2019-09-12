@@ -1,7 +1,6 @@
 group 'com.ws'
-version = '0.0.1-SNAPSHOT'
+version '1.0'
 apply plugin: 'java'
-sourceCompatibility = 1.8
 
 
 buildscript {
@@ -27,10 +26,7 @@ allprojects {
         jcenter()
         mavenCentral()
     }
-    //指定编码格式
-    tasks.withType(JavaCompile) {
-        options.encoding = "UTF-8"
-    }
+
 }
 
 // 子模块/项目的统一配置
@@ -51,19 +47,4 @@ subprojects {
 
         }
     }
-
-    jar {
-        manifest.attributes provider: 'gradle'
-    }
-
-    configurations {
-        custom {
-            it.extendsFrom implementation
-        }
-    }
-
-    bootRepackage {
-        customConfiguration = 'custom'
-    }
-
 }

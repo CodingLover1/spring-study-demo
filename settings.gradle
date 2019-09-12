@@ -1,9 +1,11 @@
-rootProject.name = 'study-demo'
-include 'spring-data-mongo'
+rootProject.name = 'spring-study-model'
 include 'serviceA'
 include 'serviceB'
 include 'gateway'
 include 'springboot-rabbitmq'
 include 'springboot-mybaties'
 include 'springboot-kafka'
+include 'springboot-mongo'
+include 'spring-test'
+include 'spring-webservice'
 
