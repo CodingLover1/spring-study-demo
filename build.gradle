@@ -6,7 +6,8 @@ apply plugin: 'java'
 buildscript {
     ext {
         //定义一个变量，统一规定springboot的版本
-        springBootVersion = '1.5.9.RELEASE'
+        //springBootVersion = '1.5.9.RELEASE'
+        springBootVersion='2.0.9.RELEASE'
     }
     repositories {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
@@ -43,8 +44,7 @@ subprojects {
     }
     dependencyManagement {
         imports {
-            mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Edgware.SR5'
-
+            mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Finchley.SR2'
         }
     }
 }

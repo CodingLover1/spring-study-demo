@@ -1,4 +1,4 @@
-rootProject.name = 'spring-study-model'
+rootProject.name = 'study-demo'
 include 'serviceA'
 include 'serviceB'
 include 'gateway'
@@ -8,4 +8,4 @@ include 'springboot-kafka'
 include 'springboot-mongo'
 include 'spring-test'
 include 'spring-webservice'
-
+include 'file-server'
