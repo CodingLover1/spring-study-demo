@@ -9,3 +9,7 @@ include 'springboot-mongo'
 include 'spring-test'
 include 'spring-webservice'
 include 'file-server'
+include 'jdk-demo'
+include 'netty-demo'
+include 'cas-client'
+

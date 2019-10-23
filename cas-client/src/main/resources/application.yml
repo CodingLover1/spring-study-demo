@@ -1,0 +1,8 @@
+cas:
+  server-url-prefix: https://cas.example.org:8443/cas
+  server-login-url: https://cas.example.org:8443/cas/login
+  client-host-url: http://cas.example.org:9100
+  validation-type: cas3
+
+server:
+  port: 9100
